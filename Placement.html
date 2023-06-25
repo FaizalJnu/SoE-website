@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Placement History</title>
+    <style>
+      table {
+        border-collapse: collapse;
+        width: 80%;
+      }
+      th,
+      td {
+        border: 1px solid black;
+        padding: 8px;
+        text-align: left;
+      }
+      footer {
+        background-color: #f2f2f2;
+        padding: 20px;
+        text-align: center;
+      }
+
+      .footer-content {
+        max-width: 800px;
+        margin: 0 auto;
+      }
+
+      .footer-links {
+        list-style: none;
+        padding: 0;
+        margin-top: 10px;
+      }
+
+      .footer-links li {
+        display: inline-block;
+        margin-right: 10px;
+      }
+
+      .footer-links li a {
+        color: #333;
+        text-decoration: none;
+      }
+
+      .footer-links li a:hover {
+        color: #555;
+      }
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      header {
+        background-color: #fff;
+        padding: 10px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 100;
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s;
+      }
+      .header-hidden {
+        transform: translateY(-100%);
+      }
+      nav {
+        background-color: #24476c;
+        display: flex;
+        position: sticky;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+        color: #fff;
+      }
+      nav ul {
+        list-style: none;
+        display: flex;
+        margin: 0;
+        padding: 0;
+      }
+      nav ul li {
+        margin-right: 10px;
+      }
+      nav ul li a {
+        text-decoration: none;
+        color: #fff;
+        padding: 5px;
+        transition: background-color 0.3s;
+      }
+      nav ul li a:hover {
+        background-color: #0056b3;
+      }
+      .content {
+            margin-top: 60px; /* To provide space for the fixed header */
+            margin-bottom: 20px; /* Add margin at the bottom to prevent overlap */
+            margin-left: auto;
+            margin-right: auto;
+            width: 80%;
+        }
+    </style>
+    <script>
+      window.addEventListener("scroll", function () {
+        var header = document.querySelector("header");
+        if (window.scrollY > 0) {
+          header.classList.add("header-hidden");
+        } else {
+          header.classList.remove("header-hidden");
+        }
+      });
+    </script>
+  </head>
+  <body>
+    <header>
+      <div class="header">
+        <h1>School of Engineering Jawaharlal Nehru University</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#about">ABOUT SE</a></li>
+          <li><a href="#academics">ACADEMICS</a></li>
+          <li><a href="#admissions">ADMISSIONS</a></li>
+          <li><a href="#faculty">FACULTY</a></li>
+          <li><a href="#research">RESEARCH</a></li>
+          <li><a href="#student">STUDENT</a></li>
+          <li><a href="#facilities">FACILITIES</a></li>
+          <li><a href="#events">EVENTS</a></li>
+          <li><a href="#notices">NOTICES</a></li>
+          <li><a href="#contact">CONTACT US</a></li>
+        </ul>
+      </nav>
+    </header>
+    <center>
+    <div class="content">
+      <h1>Placement History of JNU Engineering</h1>
+      <h2>On campus</h2>
+      <table>
+        <tr>
+          <th>Name</th>
+          <th>Company Name</th>
+          <th>Package offered</th>
+          <th>Miscellaneous</th>
+        </tr>
+        <tr>
+          <td>Sujeet Mishra</td>
+          <td>Planet Spark</td>
+          <td>6 LPA</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Sattaru Harshavardhan Reddy</td>
+          <td>Optium</td>
+          <td>14 LPA</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Revanth Sai Marella</td>
+          <td>Optum</td>
+          <td>14 LPA</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Sankalp Saxena</td>
+          <td>Totality</td>
+          <td>8 LPA</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Amanullah</td>
+          <td>Ciena</td>
+          <td>13 LPA</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Aayush Neelkanth</td>
+          <td>HSBC</td>
+          <td>14.5 LPA</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Bhavishya Raj</td>
+          <td>Analytical Wizard</td>
+          <td>8.5 LPA</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Ritika Jha</td>
+          <td>HCL</td>
+          <td>6.74 LPA</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Shubham Chaudhary</td>
+          <td>HCL</td>
+          <td>6.5 LPA</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Manasa Pothkanuri</td>
+          <td>CII - Executive</td>
+          <td>7 LPA</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Kashish Katara</td>
+          <td>Salesforce</td>
+          <td>13 LPA</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Arun Pratap Singh</td>
+          <td>Totality</td>
+          <td>8 LPA</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Badal Raj Bijawat</td>
+          <td>analytical wizard</td>
+          <td>8.5 LPA</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Umesh Kumar</td>
+          <td>Optum</td>
+          <td>14 LPA</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Sidharth Kumar</td>
+          <td>Ciena</td>
+          <td>13 LPA</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Bharat Gupta</td>
+          <td>Hughes Systique</td>
+          <td>10 LPA</td>
+          <td></td>
+        </tr>
+      </table>
+
+      <h2>Off campus</h2>
+      <table>
+        <tr>
+          <th>Name</th>
+          <th>Company Name</th>
+          <th>Package offered</th>
+          <th>Miscellaneous</th>
+        </tr>
+        <tr>
+          <td>Shidharth Anand</td>
+          <td>PhysioAI</td>
+          <td>8.5 LPA</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Shivam Jha</td>
+          <td>CISCO</td>
+          <td>33 LPA</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Sanya Agrawal</td>
+          <td>Tata 1mg</td>
+          <td>18 LPA</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Aman Singh</td>
+          <td>Intel</td>
+          <td>23.3 LPA</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Ishan Dhawan</td>
+          <td>Zetaglobal</td>
+          <td>15 LPA</td>
+          <td>prev offer: 10 LPA - kenresearch</td>
+        </tr>
+        <tr>
+          <td>Daksh Kumar</td>
+          <td>PropReturns</td>
+          <td>18 LPA</td>
+          <td>Data Scientist</td>
+        </tr>
+        <tr>
+          <td>Anmol Sinha</td>
+          <td>LSI</td>
+          <td>8 LPA</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>MUKESH KUMAR</td>
+          <td>Solar Spark</td>
+          <td>?</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Animesh Kerketta</td>
+          <td>HCL</td>
+          <td>?</td>
+          <td>waiting for offer letter</td>
+        </tr>
+        <tr>
+          <td>Amar Nath</td>
+          <td>TCS</td>
+          <td>3.5 LPA</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>N.P Vivek</td>
+          <td>TCS</td>
+          <td>3.5 LPA</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Priyanshu Ranjan</td>
+          <td>Fieldfeet</td>
+          <td>8 LPA</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>SABYASACHI SAHOO</td>
+          <td>PPO received</td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Harsh</td>
+          <td>Grant Thornton</td>
+          <td>?</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Shubham Singh</td>
+          <td>MetaBrainz Foundation</td>
+          <td>20 LPA</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Abhishek Jain</td>
+          <td>Fieldfeet</td>
+          <td>8 LPA</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Divyansh Joshi</td>
+          <td>Switch On</td>
+          <td>13 LPA</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Rohan Kumar</td>
+          <td>?</td>
+          <td>14 LPA</td>
+          <td>PhD/Job</td>
+        </tr>
+        <tr>
+          <td>Gargi Singh</td>
+          <td>Uniacco</td>
+          <td>10-12 LPA</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Arya Dwivedi</td>
+          <td>FedX</td>
+          <td>10 LPA</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Kushal Poddar</td>
+          <td>Listen2it</td>
+          <td>11 LPA</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>DEEPANSHU JAIN</td>
+          <td>Usthaan</td>
+          <td>7 LPA</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Jatin Verma</td>
+          <td>Capri Global</td>
+          <td>14 LPA</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Pinaki Das</td>
+          <td>TCS</td>
+          <td>8 LPA</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>KARTIK OHRI</td>
+          <td>MetaBrainz Foundation</td>
+          <td>20 CTC</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Ajay Kumar Yadav</td>
+          <td>New World</td>
+          <td>8 LPA</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Vishal Chaudhary</td>
+          <td>Voltela</td>
+          <td>10 LPA</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Hrithik Singla</td>
+          <td></td>
+          <td>8 LPA</td>
+          <td></td>
+        </tr>
+      </table>
+    </div>
+  </body>
+  <footer>
+    <footer>
+      <div class="footer-content">
+        <p>&copy; School of Engineering, Jawaharlal Nehru University</p>
+        <ul class="footer-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+    </footer>
+  </footer>
+</html>
